@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <style>
+        .carousel-caption {
+            position: absolute;
+            z-index: 1;
+            display: table;
+            width: 100%;
+            height: 100%;
+            text-align: right !important;
+        }
+
+        .absolute-div {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            right: 25%;
+            bottom: 50%;
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        .sec3 {
+            background-image: url("img/lights.jpg");
+            height: 180px;
+        }
+
+        .sec5 {
+            background-image: url("img/media.jpg");
+            height: 150px;
+        }
+
+        .footer {
+            background-color: rgb(81, 81, 81);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-light top-0 left-0 w-100 z-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Glozzom</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropend d-lg-none d-md-none d-sm-inline justify-content-end">
+                <button id="navbarSupportedContent" class="btn btn-dark" data-bs-toggle="dropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropleft" aria-labelledby="navbarSupportedContent">
+                    <li class="dropdown-item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel postion-relative slide carousel-fade" data-bs-ride="carousel" id="slider">
+        <ol class="carousel-indicators postion-absolute left-0 right-0">
+            <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="height: 60vh;">
+            <div class="carousel-item h-100" data-bs-interval="1000">
+                <img class="w-100 d-block h-100" src="img/image1.jpg" alt="">
+                <div class="absolute-div">
+                    <div class="carousel-caption">
+                        <h1 class="display-3">Heading Three</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus cum similique odio in aspernatur voluptatem impedit consequatur
+                            earum doloremque sequi. Laboriosam repudiandae nam sequi voluptates tenetur facere, facilis
+                            dolore
+                            quas?
+                        </p>
+                        <button class="btn btn-danger">
+                            Sign Up Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active h-100" data-bs-interval="5000">
+                <img class="w-100 d-block h-100" src="img/image2.jpg" alt="">
+                <div class="absolute-div">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-3">Heading One</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus cum similique odio in aspernatur voluptatem impedit consequatur
+                            earum doloremque sequi. Laboriosam repudiandae nam sequi voluptates tenetur facere, facilis
+                            dolore
+                            quas?
+                        </p>
+                        <button class="btn btn-danger">
+                            Sign Up Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="1000">
+                <img class="w-100 d-block h-100" src="img/image3.jpg" alt="">
+                <div class="absolute-div">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-3">Heading Two</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus cum similique odio in aspernatur voluptatem impedit consequatur
+                            earum doloremque sequi. Laboriosam repudiandae nam sequi voluptates tenetur facere, facilis
+                            dolore
+                            quas?
+                        </p>
+                        <button class="btn btn-danger">
+                            Sign Up Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 m-lg-5 m-md-3 m-sm-2">
+                <i class="fa fa-gear fa-3x"></i>
+                <h3>Turning Gears</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, tempore aliquid.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 m-lg-5 m-md-3 m-sm-2">
+                <i class="fa fa-cloud fa-3x"></i>
+                <h3>Sending Data</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, tempore aliquid.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 m-lg-5 m-md-3 m-sm-2">
+                <i class="fa fa-cart-plus fa-3x"></i>
+                <h3>Making Money</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, tempore aliquid.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec3 w-100 text-light text-center p-5">
+        <h2>Are You Ready To Get Started ?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quae omnis animi quisquam cumque odio unde
+            facere laudantium sit recusandae facilis,
+            rem atque!</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+                <h3 class="pt-5">Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ex quis cum doloribus
+                    ducimus pariatur sed et vitae reiciendis. Magni, rem et?
+                </p>
+                <button class="btn border border-2 border-danger bg-light text-dark">
+                    Learn More
+                </button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="img-fluid" src="img/laptop.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sec5 p-5 text-center">
+        <i class="fa fa-play fa-3x"></i>
+        <h1>See What We Do</h1>
+    </div>
+    <div class="text-center justify-content-center mt-5">
+        <h2>Photo Gallery</h2>
+        <p>Check out our photos</p>
+        <div class="container">
+            <!-- <div id="gallery-loader" class="text-center my-5">
+                <div class="mb-3">
+                    <div class="spinner-border" role="status" aria-hidden="true"></div>
+                    <div class="small text-muted">Loading gallery...</div>
+                </div>
+            </div> -->
+            <div id="gallery" class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=6ecedc1e639d8a4b77aa8e85f4962f03"
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1504736038806-94bd1115084e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=3d045bbf1ecc01c4c9ec011ce5c8977d"
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1419064642531-e575728395f2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=76d5c793e4f8d02d7a9be27bc71256f7"
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1214956707/photo/green-leaves-for-background-and-wallpaper.jpg?s=612x612&w=0&k=20&c=4UWIW4M6csERjbDMKcCai_W0k6hTrMZWD_RS43gYrkA="
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1226721220/photo/child-hugging-tree-with-heart-shape-on-it.jpg?s=612x612&w=0&k=20&c=Fwd3X5zoaT3YdQ2VCzMZyqwogtgcG-FIwO8CW3kO8G0="
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 m-lg-5 col-md-3 m-sm-2">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1330239566/photo/weeds-on-a-lake-shore.jpg?s=612x612&w=0&k=20&c=2yga02k56MrNR5VtZi7mrk-j3M8iE_IN2z1WkJTfPRk="
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer p-5 justify-content-center text-center">
+        <h2 class="text-light">Frequently Asked Questions </h2>
+        <div class="row p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+                <div class="bg-dark text-light w-100 p-2">
+                    <a class="text-light text-decoration-none" href="frq.html">Question One</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark footer2 text-light text-center blockquote-footer text-end m-0">
+        <p class="m-0">Copyright &#169 2023 Glozoom</p>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
